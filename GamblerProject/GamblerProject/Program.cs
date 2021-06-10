@@ -7,6 +7,8 @@ namespace GamblerProject
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            StartGame objStartGame = new StartGame();
+            objStartGame.Play();
         }
     }
 }

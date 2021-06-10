@@ -9,7 +9,7 @@ namespace GamblerProject
             Console.WriteLine("Hello World!");
             
             StartGame objStartGame = new StartGame();
-            objStartGame.Play();
+            objStartGame.InitializePlay();
             objStartGame.CheckWin();
         }
     }

@@ -9,7 +9,9 @@ namespace GamblerProject
         public void Play()
         {
             const int AMOUNT = 1;
-            Console.WriteLine("bet is of "+AMOUNT+" rs");
+            const int EVERYDAY_RS = 100;
+
+            Console.WriteLine("total amount is="+EVERYDAY_RS+"bet is of "+AMOUNT+" rs");
         }
     }
 }

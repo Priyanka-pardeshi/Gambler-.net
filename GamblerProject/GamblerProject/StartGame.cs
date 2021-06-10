@@ -19,9 +19,13 @@ namespace GamblerProject
             
             Console.WriteLine("total amount is="+EVERYDAY_RS+" and bet is of= "+AMOUNT+" rs");
         }
+
+        /// <summary>
+        /// Method to check win
+        /// </summary>
         public void CheckWin()
         {
-             bool flag = true;
+            bool flag = true;
             while (flag)
             {
                 Random objRandom = new Random();
@@ -31,11 +35,10 @@ namespace GamblerProject
                 switch (check)
                 {
                     case 1:
-                        //Console.WriteLine("Win");
                         if (currentAmount == MAX_AMOUNT)
                         {
                             flag = false;
-                            Console.WriteLine("yo're at profit");
+                            Console.WriteLine("you're at profit:"+currentAmount);
                             break;
                         }
                         currentAmount = currentAmount + 1;
@@ -44,13 +47,12 @@ namespace GamblerProject
                         if (currentAmount == MIN_AMOUNT)
                         {
                             flag = false;
-                            Console.WriteLine("yoou're at loss");
+                            Console.WriteLine("yoou're at loss:"+currentAmount);
                         }
                         currentAmount = currentAmount - 1;
-                        break;
-                   
+                        break;  
                 }//switch close
-            }
-        }
+            }//While close
+        }//Method CLose
     }
 }
